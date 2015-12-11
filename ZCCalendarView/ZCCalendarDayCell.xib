@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Cy0-db-8RG" customClass="ZCCalendarDayCell">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="54" height="56"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wk1-IJ-Vfz" userLabel="background cover" customClass="GLCalendarDayCellBackgroundCover">
+                        <rect key="frame" x="0.0" y="0.0" width="54" height="56"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbO-Wz-7LP" userLabel="day label">
+                        <rect key="frame" x="7" y="8" width="40" height="40"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="emF-cf-KuU"/>
+                            <constraint firstAttribute="width" constant="40" id="zuM-qy-40q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qQ-tv-okX" userLabel="month label">
+                        <rect key="frame" x="-10" y="2" width="74" height="20"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ZCL-6L-uTU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1qQ-tv-okX" firstAttribute="top" secondItem="Cy0-db-8RG" secondAttribute="top" constant="2" id="245-AQ-64T"/>
+                <constraint firstAttribute="centerX" secondItem="1qQ-tv-okX" secondAttribute="centerX" id="Bkl-Ut-fc7"/>
+                <constraint firstAttribute="centerX" secondItem="xbO-Wz-7LP" secondAttribute="centerX" id="GIx-6K-07s"/>
+                <constraint firstItem="Wk1-IJ-Vfz" firstAttribute="leading" secondItem="Cy0-db-8RG" secondAttribute="leading" id="MaE-Ce-WAN"/>
+                <constraint firstItem="Wk1-IJ-Vfz" firstAttribute="top" secondItem="Cy0-db-8RG" secondAttribute="top" id="RTj-1t-JmG"/>
+                <constraint firstAttribute="bottom" secondItem="Wk1-IJ-Vfz" secondAttribute="bottom" id="U5Z-oc-iPf"/>
+                <constraint firstAttribute="trailing" secondItem="Wk1-IJ-Vfz" secondAttribute="trailing" id="g1j-jK-nst"/>
+                <constraint firstAttribute="centerY" secondItem="xbO-Wz-7LP" secondAttribute="centerY" id="grz-v1-aYY"/>
+                <constraint firstAttribute="trailing" secondItem="1qQ-tv-okX" secondAttribute="trailing" constant="-10" id="pFO-xU-RCg"/>
+                <constraint firstItem="1qQ-tv-okX" firstAttribute="leading" secondItem="Cy0-db-8RG" secondAttribute="leading" constant="-10" id="sCe-Vs-8TM"/>
+            </constraints>
+            <size key="customSize" width="54" height="56"/>
+            <connections>
+                <outlet property="backgroundCover" destination="Wk1-IJ-Vfz" id="gFB-ib-zox"/>
+                <outlet property="backgroundCoverLeft" destination="MaE-Ce-WAN" id="3dN-hs-KJb"/>
+                <outlet property="backgroundCoverRight" destination="g1j-jK-nst" id="gIt-p4-GfG"/>
+                <outlet property="dayLabel" destination="xbO-Wz-7LP" id="URC-wI-R50"/>
+                <outlet property="monthLabel" destination="1qQ-tv-okX" id="M6a-Ub-YS4"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="157"/>
+        </collectionViewCell>
+    </objects>
+</document>

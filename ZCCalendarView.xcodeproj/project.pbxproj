@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52CEB5E61C0EB213009C12E7 /* ZCCalendarDateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CEB5E51C0EB213009C12E7 /* ZCCalendarDateRange.swift */; };
+		52CEB5E81C0EC30E009C12E7 /* ZCCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CEB5E71C0EC30E009C12E7 /* ZCCalendarView.swift */; };
+		52F56EA41C0FE791005FE2F5 /* ZCCalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56EA21C0FE791005FE2F5 /* ZCCalendarDayCell.swift */; };
+		52F56EA51C0FE791005FE2F5 /* ZCCalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F56EA31C0FE791005FE2F5 /* ZCCalendarDayCell.xib */; };
+		52F56EA71C0FE7D0005FE2F5 /* ZCCalendarDayCellBackgroundCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F56EA61C0FE7D0005FE2F5 /* ZCCalendarDayCellBackgroundCover.swift */; };
 		52F6FB8C1BE2D53000F5E78C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6FB8B1BE2D53000F5E78C /* AppDelegate.swift */; };
 		52F6FB8E1BE2D53000F5E78C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6FB8D1BE2D53000F5E78C /* ViewController.swift */; };
 		52F6FB911BE2D53000F5E78C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6FB8F1BE2D53000F5E78C /* Main.storyboard */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52CEB5E51C0EB213009C12E7 /* ZCCalendarDateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCCalendarDateRange.swift; sourceTree = "<group>"; };
+		52CEB5E71C0EC30E009C12E7 /* ZCCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCCalendarView.swift; sourceTree = "<group>"; };
+		52F56EA21C0FE791005FE2F5 /* ZCCalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCCalendarDayCell.swift; sourceTree = "<group>"; };
+		52F56EA31C0FE791005FE2F5 /* ZCCalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCCalendarDayCell.xib; sourceTree = "<group>"; };
+		52F56EA61C0FE7D0005FE2F5 /* ZCCalendarDayCellBackgroundCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCCalendarDayCellBackgroundCover.swift; sourceTree = "<group>"; };
 		52F6FB881BE2D53000F5E78C /* ZCCalendarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCCalendarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6FB8B1BE2D53000F5E78C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F6FB8D1BE2D53000F5E78C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,11 +82,16 @@
 			children = (
 				52F6FB8B1BE2D53000F5E78C /* AppDelegate.swift */,
 				52F6FB8D1BE2D53000F5E78C /* ViewController.swift */,
+				52CEB5E71C0EC30E009C12E7 /* ZCCalendarView.swift */,
+				52CEB5E51C0EB213009C12E7 /* ZCCalendarDateRange.swift */,
 				52F6FB8F1BE2D53000F5E78C /* Main.storyboard */,
 				52F6FB921BE2D53000F5E78C /* Assets.xcassets */,
 				52F6FB941BE2D53000F5E78C /* LaunchScreen.storyboard */,
 				52F6FB971BE2D53000F5E78C /* Info.plist */,
 				52FD640D1BEC722A008F0C8B /* ZCDateUtils.swift */,
+				52F56EA21C0FE791005FE2F5 /* ZCCalendarDayCell.swift */,
+				52F56EA31C0FE791005FE2F5 /* ZCCalendarDayCell.xib */,
+				52F56EA61C0FE7D0005FE2F5 /* ZCCalendarDayCellBackgroundCover.swift */,
 			);
 			path = ZCCalendarView;
 			sourceTree = "<group>";
@@ -162,6 +177,7 @@
 				52F6FBA71BE2D5D100F5E78C /* gl-calendar-magnify-glass@2x.png in Resources */,
 				52F6FBA81BE2D5D100F5E78C /* gl-calendar-shadow.png in Resources */,
 				52F6FBA61BE2D5D100F5E78C /* gl-calendar-magnify-glass.png in Resources */,
+				52F56EA51C0FE791005FE2F5 /* ZCCalendarDayCell.xib in Resources */,
 				52F6FBA91BE2D5D100F5E78C /* gl-calendar-shadow@2x.png in Resources */,
 				52F6FB961BE2D53000F5E78C /* LaunchScreen.storyboard in Resources */,
 				52F6FB931BE2D53000F5E78C /* Assets.xcassets in Resources */,
@@ -179,8 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F6FB8E1BE2D53000F5E78C /* ViewController.swift in Sources */,
+				52CEB5E81C0EC30E009C12E7 /* ZCCalendarView.swift in Sources */,
 				52F6FB8C1BE2D53000F5E78C /* AppDelegate.swift in Sources */,
+				52CEB5E61C0EB213009C12E7 /* ZCCalendarDateRange.swift in Sources */,
 				52FD640E1BEC722A008F0C8B /* ZCDateUtils.swift in Sources */,
+				52F56EA71C0FE7D0005FE2F5 /* ZCCalendarDayCellBackgroundCover.swift in Sources */,
+				52F56EA41C0FE791005FE2F5 /* ZCCalendarDayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
