@@ -38,39 +38,48 @@ class ZCCalendarRangePoint : UIView
 }
 
 
-class GLCalendarDayCellBackgroundCover: UIView {
+class ZCCalendarDayCellBackgroundCover: UIView {
     
-    var rangePosition : RANGE_POSITION
-    var paddingLeft : CGFloat
-    var paddingRight : CGFloat
-    @property (nonatomic) CGFloat paddingTop;
-    @property (nonatomic, strong) UIColor *fillColor;
-    @property (nonatomic, strong) UIColor *strokeColor;
-    @property (nonatomic, strong) UIImage *backgroundImage;
-    @property (nonatomic) CGFloat borderWidth;
-    @property (nonatomic) BOOL inEdit;
-    @property (nonatomic) BOOL isToday;
-    @property (nonatomic) BOOL continuousRangeDisplay;
-    @property (nonatomic) CGFloat pointSize;
-    @property (nonatomic) CGFloat pointScale;
+
+    var paddingLeft : CGFloat?
+    var paddingRight : CGFloat?
+    var paddingTop : CGFloat?
+    var fillcolor : UIColor?
+    var strokeColor : UIColor?
+    var backgroundImage : UIImageView?
+    var borderWidth : CGFloat?
+    var inEdit : Bool?
+    var isToday : Bool?
+    var continuousRangeDisplay : Bool?
+    var pointSize : CGFloat?
+    var pointScale : CGFloat?
+    
+    
+    var rangePosition : RANGE_POSITION?
     
     var _beginPoint : ZCCalendarRangePoint?
-    var beginPoint : ZCCalendarRangePoint {
-//        _beginPoint = [[GLCalendarRangePoint alloc] initWithSize:self.pointSize borderWidth:self.borderWidth strokeColor:self.strokeColor];
-//        _beginPoint.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin;
-//
-        get{
-            if self._beginPoint == nil
-            {
-                let Point = ZCCalendarRangePoint(size: self.pointSize, borderWidth: self.borderWidth, strokeColor: UIColor)
-                
-            }
-        
-        
-        
-            return nil
+    var beginPoint : ZCCalendarRangePoint  {
+        if _beginPoint == nil
+        {
+            _beginPoint = ZCCalendarRangePoint(size: pointSize!, borderWidth: borderWidth!, strokeColor: strokeColor!)
+            _beginPoint!.autoresizingMask = [.FlexibleBottomMargin,.FlexibleRightMargin,.FlexibleTopMargin ]
         }
+        return _beginPoint!
     }
+    
+    var _endPoint : ZCCalendarRangePoint?
+    var endPoint : ZCCalendarRangePoint{
+        if _endPoint == nil
+        {
+            _endPoint = ZCCalendarRangePoint(size: pointSize!, borderWidth: borderWidth!, strokeColor: strokeColor!)
+            _endPoint!.autoresizingMask = [.FlexibleBottomMargin,.FlexibleLeftMargin,.FlexibleTopMargin ]
+        }
+        return _endPoint!
+        
+        
+    }
+    
+    
     
 
 }
